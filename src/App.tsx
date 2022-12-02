@@ -9,11 +9,19 @@ function App() {
   return (
     <>
       {/* Контрол с 2 кнопками справа; */}
-      {/* <ControlWithButtons
+      <ControlWithButtons
         leftButtonsParams={[]}
-        rightButtonsParams={[ {buttonText: 'Right1', callback: () => controllStore.onValueChanged('')},
-        {buttonText: 'Right2', callback: () => controllStore.onValueChanged('Hello World')},]}
-      /> */}
+        rightButtonsParams={[
+          {
+            buttonText: "Right1",
+            callback: () => controllStore.onValueChanged(""),
+          },
+          {
+            buttonText: "Right2",
+            callback: () => controllStore.onValueChanged("Hello World"),
+          },
+        ]}
+      />
 
       {/* Контрол с 1 кнопкой справа и 1 кнопкой слева; */}
       {/* <ControlWithButtons
@@ -32,7 +40,7 @@ function App() {
       /> */}
 
       {/* Контрол-автокомплит  Максимальное кол-во подсказок - 3*/}
-      <ControlAutoComplete maxHelps={3} />
+      {/* <ControlAutoComplete maxHelps={3} /> */}
 
       {/* Контрол-автокомплит  Максимальное кол-во подсказок - 10*/}
       {/* <ControlAutoComplete maxHelps={10}/> */}
